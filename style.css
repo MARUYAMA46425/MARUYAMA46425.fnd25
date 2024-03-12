@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  color: black;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+
+h1 {
+  margin: 0px 0px;
+  padding: 8px;
+  background-color: #b4b3b3;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.6;
+  color: #fff;
+
+}
+
+p {
+  color: rgba(3, 4, 27, 0.753);
+  background-color: gold;
+  /* margin : 0 0 0 16px; */
+  margin: 0px;
+  /* margin : 10px 10px; */
+  /* width : 160px; */
+  /* width : 100%; */
+  /* max-width: 700px; */
+  height: 60px;
+  /* height : 50%; */
+  /* border-top-width: 8px;
+  border-top-style: solid;
+  border-top-color: blue; */
+  /* border-top:8px solid brown;
+  border-bottom-width: 8px;
+  border-bottom-style: double;
+  border-bottom-color: green; */
+  /* border : 8px solid rgba(219, 144, 16, 0.667) ; */
+  /* border : 8px solid blue ; */
+  /* padding: 0 8px; */
+  padding: 8px ;
+  box-sizing: border-box;
+  overflow: auto;
+  /* overflow: scroll; */
+  border-radius: 5px;
+  /* box-shadow:8px 8px 8px#dfdddd ; */
+  box-shadow: 0px 0px 10px#b4b3b3;
+  /* font-weight: bold; */
+  font-weight: normal;
+  text-align: right;
+  line-height: 1.8;
+
+}
+
+form {
+  background-color: antiquewhite;
+}
+
+/* id sp{
+  box-sizing : border-box;
+
+} */
+
+section{
+  border: 1px solid lightgray;
+  width: 400px;
+  margin: 32px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}

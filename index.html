@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <script type="text/javascript" src="script.js"></script>
+  <title>試作 零号</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <style>
+    p{
+      background-color: pink;
+    }
+  </style> -->
+</head>
+
+<body>
+  <p>Hello</p>
+  <button>OK</button>
+
+  <section>
+    <h1>今日の勉強</h1>
+
+    <!-- <p>練習用ホームページ</p> -->
+    <p id=sp>練習用ホームページ,練習用ホームページ,練習用ホームページ,練習用ホームページ,練習用ホームページ,練習用ホームページ,</p>
+    <!-- <p>練習用ホームページ</p> -->
+  </section>
+
+  <form><!--入力フォームの作り方-->
+    <div>
+      <label>
+        名前
+        <input type="text" value="丸山 ゆだーい！" placeholder="貴方の名前入力して！">
+      </label>
+    </div>
+
+    <div>
+      <label>
+        PassWord
+        <input type="password" placeholder="半角英数で入力して！">
+      </label>
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>種族選択</legend>
+        <label><input type="checkbox" checked>種族１</label>
+        <label><input type="checkbox">種族２</label>
+        <label><input type="checkbox">種族３</label>
+      </fieldset>
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>難易度選択</legend>
+        <label><input type="radio" name="warranty" checked>easy</label>
+        <label><input type="radio" name="warranty">normal</label>
+        <label><input type="radio" name="warranty">hord</label>
+      </fieldset>
+    </div>
+
+    <div>
+      <label>
+        カスタムモード選択
+        <select size="3" multiple>
+          <option>--カスタムしたい項目を追加(ctr+enterで複数指定可能)--</option>
+          <option>アイテムあり</option>
+          <option>ソロモード</option>
+          <option>武器なし</option>
+        </select>
+      </label>
+
+    </div>
+
+
+    <div>
+      <label for="content">内容</label>
+      <textarea name="" id="content" cols="30" rows="10" placeholder="例:足が臭い">
+不満はここに書いてね！
+よろしく！
+      </textarea>
+    </div>
+
+    <div>
+      <button disabled>送信</button>
+    </div>
+
+  </form>
+
+</body>
+
+</html>

@@ -4,90 +4,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <script type="text/javascript" src="script.js"></script>
-  <title>試作 零号</title>
+  <!-- タイトル&ファビコン -->
+  <title>YUKI’s PORTFOLIO</title>
+  <link rel="icon" type="img/png" href="images/icons8-ネコ-16.png">
+  <!-- tdd -->
+  <script type="text/javascript" src="modules/lodash.min.js"></script>
+  <script type="text/javascript" src="modules/test-boilerplate.js"></script>
+  <!-- 各種Link -->
+  <script defer type="text/javascript" src="script.js"></script>
   <link rel="stylesheet" href="style.css">
-  <!-- <style>
-    p{
-      background-color: pink;
-    }
-  </style> -->
+  <!-- webフォントlink -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <p>Hello</p>
-  <button>OK</button>
+  <header>
+    <!-- HP TOP見出し -->
+    <h1 id="top-message">Welcome to my memories room</h1>
+    <!-- SNS LINKアイコン -->
+    <div class="sns-icons">
+      <!-- インスタ -->
+      <div id="insta">
+        <a href="https://www.instagram.com/youdawanshan?ref=badge/" target="_blank"> <img
+            src="images/Instagram_Glyph_Gradient.png" alt="instagram_icon" width=25px height=25px></a>
+      </div>
+      <!-- ツイッター -->
+      <div id="X">
+        <a href="https://twitter.com/yd306050" target="_blank"> <img src="images/logo-white.png" alt="X_icon" width=25px
+            height=25px></a>
+      </div>
+    </div>
+    <!-- 各種コンテンツLINK  -->
+    <nav>
+      <ul>
+        <li><a href="main.html">main</a> </li>
+        <li><a href="contact.html">collection</a> </li>
+        <li><a href="contact.html">profile</a> </li>
+        <li><a href="contact.html">contact</a> </li>
+      </ul>
+    </nav>
+  </header>
 
-  <section>
-    <h1>今日の勉強</h1>
+  <main>
+    <div class="main-display">
+      <!-- キャッチコピー -->
+      <!-- <h2 id="catch-copy">あなたの”つくりたい”を
+        <br>一緒につくりたい
+      </h2> -->
 
-    <!-- <p>練習用ホームページ</p> -->
-    <p id=sp>練習用ホームページ,練習用ホームページ,練習用ホームページ,練習用ホームページ,練習用ホームページ,練習用ホームページ,</p>
-    <!-- <p>練習用ホームページ</p> -->
+      <!-- プロフィール -->
+      <section id="memo">
+        <div class ="flex">
+          <h1>My Profile</h1>
+          
+
+        </div>
+
+        <textarea>
+
+        </textarea>
+        <p id="sp">＠とりあえず全ての要素に事細かくidやclassを割り振ってるほうが後から楽できる
+          <br>＠フォルダやファイルはある程度保存場所や名称を決めていたほうが良い
+          <br>＠全ページ共用部（ページのヘッダー、フッター等）を先に作って他のページに展開
+          <br>＠コメント入れる癖つけしないと可読性がとても悪い
+          <br>＠inheritは親要素のプロパティを継承する
+          <br>＠そろそろDOMちゃんと見なきゃ後で後悔しそう
+          <br>＠CSSに直接背景写真入れちゃうと操作しにくくてとても良くない <br>＠CSSに直接背景写真入れちゃうと操作しにくくてとても良くない <br>＠CSSに直接背景写真入れちゃうと操作しにくくてとても良くない
+          <br>＠CSSに直接背景写真入れちゃうと操作しにくくてとても良くない <br>＠CSSに直接背景写真入れちゃうと操作しにくくてとても良くない <br>＠CSSに直接背景写真入れちゃうと操作しにくくてとても良くない
+          <br>＠CSSに直接背景写真入れちゃうと操作しにくくてとても良くない
+        </p>
+      </section>
+      <!-- ホーム画面 写真 -->
+      <img id= homePic src="images/IMG_7201c.jpeg" alt="ホーム画面" width="1400" height="700">
+    </div>
+  </main>
+
+  <section id="sns">
+    <h2>MY WORKS</h2>
+    <!-- YouTube動画 -->
+    <div class="container">
+      <div class="sns-box">
+        <h3 class="sub-title"> #01</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ydOcT0eeNfs?si=czv5_rwEhx9KZ5DU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="sns-box">
+        <h3 class="sub-title">#02</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tu6pWncYy4U?si=P0j4r23VCieD250X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="sns-box">
+        <h3 class="sub-title">#03</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9NfENf-WpSs?si=fE8UafN35ogfAPuZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="sns-box">
+        <h3 class="sub-title">#04</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OSe2ef3iLGw?si=jKMXnSr_WDXsIrgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="sns-box">
+        <h3 class="sub-title">#05</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/n2-Griw7p_Y?si=RrbBcxYeBySrPxGt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="sns-box">
+        <h3 class="sub-title">#06</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iEpb6K6l7ys?si=6MwfsHznnzlf2Xty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="sns-box">
+        <h3 class="sub-title">#YOU TUBE</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6L7RmLIlkjs?si=efUczOJqCK7Ne72R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="sns-box">
+        <h3 class="sub-title">#YOU TUBE</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/G9JFEYdn5rc?si=W1aGrh3R8jKWUDa2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="sns-box">
+        <h3 class="sub-title">#YOU TUBE</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5KR5jLfg66c?"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
   </section>
 
-  <form><!--入力フォームの作り方-->
-    <div>
-      <label>
-        名前
-        <input type="text" value="丸山 ゆだーい！" placeholder="貴方の名前入力して！">
-      </label>
-    </div>
+  <!-- テスト -->
+  <div>
+    <label for="content">内容</label>
+    <textarea name="url" id="content" cols="30" rows="10" placeholder="例:足が臭い">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1ceCFSYgTzg?si=Br9xyW10cYECIFdz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </textarea>
+  </div>
 
-    <div>
-      <label>
-        PassWord
-        <input type="password" placeholder="半角英数で入力して！">
-      </label>
-    </div>
-
-    <div>
-      <fieldset>
-        <legend>種族選択</legend>
-        <label><input type="checkbox" checked>種族１</label>
-        <label><input type="checkbox">種族２</label>
-        <label><input type="checkbox">種族３</label>
-      </fieldset>
-    </div>
-
-    <div>
-      <fieldset>
-        <legend>難易度選択</legend>
-        <label><input type="radio" name="warranty" checked>easy</label>
-        <label><input type="radio" name="warranty">normal</label>
-        <label><input type="radio" name="warranty">hord</label>
-      </fieldset>
-    </div>
-
-    <div>
-      <label>
-        カスタムモード選択
-        <select size="3" multiple>
-          <option>--カスタムしたい項目を追加(ctr+enterで複数指定可能)--</option>
-          <option>アイテムあり</option>
-          <option>ソロモード</option>
-          <option>武器なし</option>
-        </select>
-      </label>
-
-    </div>
-
-
-    <div>
-      <label for="content">内容</label>
-      <textarea name="" id="content" cols="30" rows="10" placeholder="例:足が臭い">
-不満はここに書いてね！
-よろしく！
-      </textarea>
-    </div>
-
-    <div>
-      <button disabled>送信</button>
-    </div>
-
-  </form>
+  <div>
+    <button id = "sendBtn">送信</button>
+  </div>
 
 </body>
+
+<footer>
+  <!-- HP制作者 プロフィール-->
+  <div id="footer">
+    <div id="yuudai">
+      <div>
+        <h2>HP 制作者</h2>
+        <img id="kao" src="images/F3052D2A-C0CD-4D35-B4E5-41A24B650DB4_1_105_c.jpeg" width="100px" height="100px">
+      </div>
+      <div id="message">
+        <p>＜氏名＞丸山佑大</p>
+        <p>＜生年月日＞１９９１／０６／０５</p>
+        <p>＜職業＞トヨタ車体　デジタル変革推進室</p>
+        <p>＜経歴＞入社後はW保全として12年間従事、２０２４年社内公募にて現在のデジタル変革推進室に異動する。</p>
+        <p>＜願望＞HTML&CSS、javascriptを使ってwebアプリなどを作れるようになりたい！</p>
+        <p>＜最後に一言＞DIG大変だったけど楽しかったです！</p>
+      </div>
+      <div id="X-timeline">
+        <a class="twitter-timeline" data-height="315" href="https://twitter.com/yd306050?ref_src=twsrc%5Etfw">Tweets
+          by yd306050</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </html>

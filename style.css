@@ -2,12 +2,10 @@
 
 body {
   margin: 0;
-  /* width: 100%; */
   color: black;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   background-color: #fff;
-  /* background-size: cover;
-  background-image: url(images/IMG_7201.JPG); */
+  
 }
 
 header {
@@ -17,9 +15,6 @@ header {
   padding: 10px 10px 0px; 
   position: fixed;
   width: 100%;
-  /* margin-bottom: 0%; */
-  /* text-align: center; */
-  /* font-size: 40px; */
 }
 
 #top-message {
@@ -27,9 +22,7 @@ header {
   height: 50px;
   padding-left: 6%;
   margin: 10px 0 0 0;
-  /* padding: 0; */
   text-align: left;
-  /* position: fixed; */
 }
 
 div.sns-icons {
@@ -51,7 +44,6 @@ ul {
   display: flex;
   justify-content: flex-end;
   margin: 16px 6% 8px 0px;
-  /* background-color: #000000; */
 }
 
 li {
@@ -94,37 +86,12 @@ main {
   line-height: 1.8;
   border-radius: 5px;
   box-shadow: 0px 0px 10px#b4b3b3;
-  /* background-color: gold; */
-  /* margin : 0 0 0 16px; */
-  /* margin : 10px 10px; */
-  /* width : 160px; */
-  /* width : 100%; */
-  /* max-width: 700px; */
-  /* height : 50%; */
-  /* border-top-width: 8px;
-  border-top-style: solid;
-  border-top-color: blue; */
-  /* border-top:8px solid brown;
-  border-bottom-width: 8px;
-  border-bottom-style: double;
-  border-bottom-color: green; */
-  /* border : 8px solid rgba(219, 144, 16, 0.667) ; */
-  /* border : 8px solid blue ; */
-  /* padding: 0 8px; */
-  /* overflow: scroll; */
-  /* box-shadow:8px 8px 8px#dfdddd ; */
-  /* font-weight: bold; */
+  text-align: center;
 }
 
 #sp {
-  /* color: #000000; */
-  /* background-color: rgba(3, 4, 27, 0.245); */
-  text-align: left;
   padding-top: 0px;
   height: 100%;
-  /* margin-top: 10px; */
-  /* margin-bottom: 10px; */
-  /* padding: 10px; */
 }
 
 #memo {
@@ -135,7 +102,6 @@ main {
   margin: 0px 15px 0px 15px;
   border-radius: 10px;
   overflow: hidden;
-  /* padding-top: 20px; */
 }
 
 #memo textarea {
@@ -143,7 +109,7 @@ main {
   width:100%;
   height:100%;
   border: none;
-  font-size: 20px;
+  font-size: 23px;
   padding: 20px 5px;
   
 }
@@ -158,7 +124,6 @@ main {
 .main-display{
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
   justify-content: center;
   padding: 30px 0px 30px 0px ;
   margin:0 0 0 5%;
@@ -176,9 +141,7 @@ main {
   font-family: "Amatic SC", cursive;
   color: #fff;
   color: #000;
-  /* background-color: #00000039; */
   padding: 1%;
-  /* border: #ffffff 3px; */
   margin: 0 5% 0 ;
   height:fit-content;
   
@@ -186,15 +149,12 @@ main {
 
 #sns h2 {
   font-size: 50px;
-  /* color: #fff; */
   color: #000;
   text-align: center;
 }
 
 .container {
   font-size: 25px;
-  /* width: 100%; */
-  /* height: auto; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
   gap: 10px;
@@ -205,56 +165,24 @@ main {
   
 }
 
-/* iframe {
-  width: auto;
-  height: 100%;
-  } */
-
-  /* .container {
-    width: 100%;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .container .sns-box {
-    padding-top: 56.25%;
-    position: relative;
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .container.sns-box iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  } */
-
 #sns .wrapper {
   display :flex;
-  /* justify-content:center; */
 }
-/* 
-#sns .sabtitle {
-  margin-bottom: 30px;
-  
-} */
 
 .sns-box {
   width: 50%;
   min-width: 0;
   margin-left: 10%;
-  /* padding: 5px; */
-  /* margin: 5px; */
 }
 
 iframe {
   width: 160%;
-  /* min-width: 50px; */
   margin:auto;
 }
 
+#urlBtn {
+  text-align:right;
+}
 
 
 footer {
@@ -287,7 +215,6 @@ footer {
 #fotter h2{
   margin: 0 0 0 3%;
   width: 300px;
-  /* background-color: #a4a4a4; */
   padding: 0px;
 }
 
@@ -309,5 +236,60 @@ form {
   width: 90%;
   padding: 2%;
   border: 2px solid black;
-  /* background-color: #e9e6e6; */
+}
+
+
+#box1 {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  border: 2px solid green;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box1 input {
+  width: 50%;
+}
+
+#box2 {
+  height:  400px;
+  margin-top: 10px;
+  border:  2px solid blue;
+  background-color: rgba(0, 255, 187, 0.499);
+
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 160px;
+  font-size: 16px;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+button {
+  padding: 4px 16px;
+  cursor: pointer;
+}
+
+span {
+  font-size: 14px;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.appear {
+  opacity: 1;
 }

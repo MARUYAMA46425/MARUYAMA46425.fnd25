@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>問い合わせ画面</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- HP TOP見出し -->
+    <h1 id="top-message">Welcome to my memories room</h1>
+    <!-- SNS LINKアイコン -->
+    <div class="sns-icons">
+      <div id="insta">
+        <a href="https://www.instagram.com/youdawanshan?ref=badge/" target="_blank"> <img
+            src="images/Instagram_Glyph_Gradient.png" alt="instagram_icon" width=25px height=25px></a>
+      </div>
+      <div id="X">
+        <a href="https://twitter.com/yd306050" target="_blank"> <img src="images/logo-white.png" alt="X_icon" width=25px
+            height=25px></a>
+      </div>
+    </div>
+    <!-- ページ内LINK  -->
+    <nav>
+      <ul>
+        <li><a href="main.html">main</a> </li>
+        <li><a href="contact.html">collection</a> </li>
+        <li><a href="contact.html">profile</a> </li>
+        <li><a href="contact.html">contact</a> </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <form>
+    <div id="input_menu">
+
+      <div>
+        <label>
+          名前
+          <input type="text" value="丸山 ゆだーい！" placeholder="貴方の名前入力して！">
+        </label>
+      </div>
+      
+      <div>
+        <label>
+          PassWord
+          <input type="password" placeholder="半角英数で入力して！">
+        </label>
+      </div>
+      
+      <div>
+        <fieldset>
+          <legend>種族選択</legend>
+          <label><input type="checkbox" checked>種族１</label>
+          <label><input type="checkbox">種族２</label>
+          <label><input type="checkbox">種族３</label>
+        </fieldset>
+      </div>
+      
+      <div>
+        <fieldset>
+          <legend>難易度選択</legend>
+          <label><input type="radio" name="warranty" checked>easy</label>
+          <label><input type="radio" name="warranty">normal</label>
+          <label><input type="radio" name="warranty">hord</label>
+        </fieldset>
+      </div>
+      
+      <div>
+        <label>
+          カスタムモード選択
+          <select size="3" multiple>
+            <option>--カスタムしたい項目を追加(ctr+enterで複数指定可能)--</option>
+            <option>アイテムあり</option>
+            <option>ソロモード</option>
+            <option>武器なし</option>
+          </select>
+        </label>
+        
+      </div>
+      
+      
+      <div>
+        <label for="content">内容</label>
+        <textarea name="" id="content" cols="30" rows="10" placeholder="例:足が臭い">
+          不満はここに書いてね！
+          よろしく！
+        </textarea>
+      </div>
+      
+      <div>
+        <button disabled>送信</button>
+      </div>
+    </div>
+    </form>
+    
+  </body>
+  
+  <footer>
+    <section id="sns">
+      <div class="wrapper">
+        <div class="sns-box">
+        <h3 class="sub-title">X</h3>
+        <a class="twitter-timeline" data-height="315" href="https://twitter.com/yd306050?ref_src=twsrc%5Etfw">Tweets
+          by yd306050</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+
+      <div class="sns-box">
+        <h3 class="sub-title">YOU TUBE</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4iM9tXUIbnM?si=op_Gj7UVE8GOyqkJ"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+
+</footer>
+
+</html>

@@ -56,19 +56,19 @@ const intervalAct = function () {
   if (y === "a") {
     console.log(y);
     y = "b";
-    homePic.setAttribute("src", "images/IMG_7207.jpg");
+    homePic.setAttribute("src", "images/IMG_7201c.jpeg");
   } else if (y === "b") {
     console.log(y);
     y = "c";
-    homePic.setAttribute("src", "images/IMG_7201c.jpeg");
+    homePic.setAttribute("src", "images/04A177F5-A9DD-4BBD-B693-18AAE89443A9_1_105_c.jpeg");
   } else if (y === "c") {
     console.log(y);
     y = "d";
-    homePic.setAttribute("src", "images/04A177F5-A9DD-4BBD-B693-18AAE89443A9_1_105_c.jpeg");
+    homePic.setAttribute("src", "images/image.png");
   } else if (y === "d") {
     console.log(y);
     y = "a"
-    homePic.setAttribute("src", "images/image.png");
+    homePic.setAttribute("src", "images/IMG_7207.jpeg");
   }
 };
 
